@@ -1,4 +1,16 @@
-module Mastermind where
+{-|
+Module      : Mastermind
+Description : Implements the mastermind puzzle
+Copyright   : (c) Love Lyckaro, 2021
+License     : MIT
+Maintainer  : love@lyckaro.se
+Stability   : experimental
+Portability : POSIX
+
+Made this real quick, it was fun. Needs the packages unordered-containers and
+transformers to compile.
+-}
+module Mastermind (Guess, solve, prettySolve) where
 
 import Control.Monad.Trans.State.Strict
   ( State,
